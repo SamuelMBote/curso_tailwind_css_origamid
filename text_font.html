@@ -5,39 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natureza</title>
   </head>
-  <body class="m-8">
-    <div class="grid bg-green-950 h-screen ">
-      <section class="">
-        <p class="uppercase font-sans text-center my-4 mx-auto text-lime-300 tracking-widest">
-          conecte-se com a natureza
-        </p>
-        <p class="capitalize font-serif text-center text-7xl max-w-3xl mx-auto text-white">
-          cada som, cada momento, uma nova descoberta
-        </p>
-     
-      <div class="flex gap-8 *:m-8 *:rounded-xl *:bg-lime-900 *:p-8 mx-auto">
-        <div class="grid gap-4">
+  <body class="">
+    <section class="bg-lime-950 p-4 md:p-8">
+      <p
+        class="uppercase font-sans text-center mb-4 mx-auto text-lime-300 tracking-widest"
+      >
+        conecte-se com a natureza
+      </p>
+      <p
+        class="capitalize font-serif text-center text-3xl md:text-6xl mx-auto text-white mb-6 md:mb-8"
+      >
+        cada som, cada momento, uma nova descoberta
+      </p>
+
+      <div
+        class="flex flex-col md:flex-row gap-6 md:gap-8 *:rounded-xl *:bg-lime-900 *:p-4 md:*:p-6 mx-auto max-w-screen-xl"
+      >
+        <div class="grid gap-3 md:gap-4">
           <p class="text-2xl font-serif text-lime-300">Lua Nova</p>
-          <p class="font-serif text-5xl flex flex-col text-white">23  <span class="font-sans text-base">Março 2049</span></p>
-         
+          <div class="max-md:flex max-md:items-end max-md:gap-2">
+            <p class="font-serif text-5xl text-white">23</p>
+            <p class="font-sans text-base text-white">Março 2049</p>
+          </div>
+
           <p class="my-4 text-lime-300">
             Melhor período para observação astronômica. O Céu estará claro e as
             estrelas visíveis
           </p>
-          <a href="/" class="text-white py-2 px-4 bg-lime-950 rounded-full">Reservar 23/03</a>
+          <a href="/" class="text-white py-2 px-4 bg-lime-950 rounded-full"
+            >Reservar 23/03</a
+          >
         </div>
-        <div class="grid gap-4">
+        <div class="grid gap-3 md:gap-4">
           <p class="text-2xl font-serif text-lime-300">Aurora Boreal</p>
-          <p class="font-serif text-5xl flex flex-col text-white">15  <span class="font-sans text-base">Abril 2049</span></p>
-         
-          <p class="my-4 text-lime-300">
-            Melhor período para observação da Aurora Boreal, o céu estará iluminado pelas estrelas
-          </p>
-          <a href="/" class="text-white py-2 px-4 bg-lime-950 rounded-full">Reservar 15/04</a>
+          <div class="max-md:flex max-md:items-end max-md:gap-2">
+            <p class="font-serif text-5xl text-white">15</p>
+            <p class="font-sans text-base text-white">Abril 2049</p>
+          </div>
 
+          <p class="my-4 text-lime-300">
+            Melhor período para observação da Aurora Boreal, o céu estará
+            iluminado pelas estrelas
+          </p>
+          <a href="/" class="text-white py-2 px-4 bg-lime-950 rounded-full"
+            >Reservar 15/04</a
+          >
         </div>
       </div>
-    </div>
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
