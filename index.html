@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./src/style.css" />
     <title>Vite + TS</title>
   </head>
-  <body class="m-8">
+
+  <body class="m-8 grid gap-8">
     <section class="">
       <div>
         <h1 class="capitalize text-4xl border-t-4 border-b-4 p-4">
@@ -60,7 +61,8 @@
         </ul>
       </div>
     </section>
-    <section>
+
+    <section class="">
       <div
         class="flex gap-4 *:rounded-l-full *:rounded-r-full *:py-2 *:px-4 *:border-2 font-medium"
       >
@@ -70,6 +72,71 @@
           >Processando</span
         >
         <span class="bg-red-200 text-red-900 border-red-500">Falha</span>
+      </div>
+    </section>
+    <section>
+      <div class="grid gap-4 max-w-96">
+        <h2 class="uppercase font-bold text-lg font-sans">escolha a sua</h2>
+        <div class="">
+          <input
+            class="peer"
+            type="radio"
+            value="produto"
+            name="nimbus"
+            id="nimbus"
+          />
+          <label
+            class="capitalize bg-gray-300 p-2 rounded-lg peer-checked:bg-gray-400 hover:bg-gray-400"
+            for="nimbus"
+            >Nimbus Stark <span class="font-semibold"> R$ 4999</span></label
+          >
+          <ul class="hidden peer-checked:block bg-gray-200 m-4 p-4 rounded-lg">
+            <li>Motor Elétrico</li>
+            <li>Fibra de Carbono</li>
+            <li>50 km/h</li>
+            <li>Rastreador</li>
+          </ul>
+        </div>
+        <div class="">
+          <input
+            class="peer"
+            type="radio"
+            name="produto"
+            value="magic"
+            id="magic"
+          />
+          <label
+            class="capitalize bg-gray-300 p-2 rounded-lg peer-checked:bg-gray-400 hover:bg-gray-400"
+            for="magic"
+            >Magic Might <span class="font-semibold"> R$ 2499</span></label
+          >
+          <ul class="hidden peer-checked:block bg-gray-200 m-4 p-4 rounded-lg">
+            <li>Motor Elétrico</li>
+            <li>Fibra de Carbono</li>
+            <li>50 km/h</li>
+            <li>Rastreador</li>
+          </ul>
+        </div>
+        <div class="">
+          <input
+            class="peer"
+            type="radio"
+            name="produto"
+            value="nebula"
+            id="nebula"
+          />
+          <label
+            class="capitalize bg-gray-300 p-2 rounded-lg peer-checked:bg-gray-400 hover:bg-gray-400"
+            for="nebula"
+            >Nebula Cosmic <span class="font-semibold"> R$ 3999</span></label
+          >
+          <ul class="hidden peer-checked:block bg-gray-200 m-4 p-4 rounded-lg">
+            <li>Motor Elétrico</li>
+            <li>Fibra de Carbono</li>
+            <li>50 km/h</li>
+            <li>Rastreador</li>
+          </ul>
+        </div>
       </div>
     </section>
     <script type="module" src="/src/main.ts"></script>
