@@ -9,7 +9,260 @@
     <title>Vite + TS</title>
   </head>
 
-  <body class="">
+  <body class="bg-verde-800 font-sans mb-96">
+    <div class="container mt-4 flex justify-center md:justify-start">
+      <div class="inline-flex items-center rounded-md bg-verde-900">
+        <span
+          class="size-2 bg-verde-300 block rounded-full relative -left-1"
+        ></span>
+        <div class="flex text-verde-300 divide-x-2 divide-verde-800">
+          <div class="px-4 py-2 capitalize" id="dia">Segunda</div>
+          <div class="px-4 py-2" id="temperatura">25º</div>
+          <div class="px-4 py-2" id="tempo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="container flex items-center justify-between gap-8 py-8">
+      <a href="./">
+        <img src="/src/img/forest.svg" alt="Forest" />
+      </a>
+      <nav>
+        <ul class="text-white text-xl flex flex-wrap gap-8">
+          <li>
+            <a
+              class="hover:underline hover:underline-offset-8"
+              href="#acomodacoes"
+              >Acomodações</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-8" href="#eventos"
+              >Eventos</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:underline hover:underline-offset-8"
+              href="#experiencias"
+              >Experiências</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-8" href="#contato"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div
+        class="text-white relative max-sm:pt-12 pt-64 max-sm:px-4 px-8 pb-8 rounded-2xl overflow-hidden bg-gradient-to-t from-verde-950/80"
+      >
+        <img
+          class="absolute size-full -z-10 object-cover inset-0"
+          src="/src/img/floresta.jpg"
+          alt="floresta"
+        />
+        <div
+          class="sm:bg-verde-950 bg-verde-950/60 mb-8 sm:inline-flex sm:items-center items-start sm:py-1 sm:pr-1 sm:rounded-full rounded-xl sm:pl-4 sm:gap-8 flex flex-col gap-2 p-4 sm:flex-row"
+        >
+          vagas para dezembro abertas
+          <a
+            class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400"
+            href=""
+            >Reserve Hoje</a
+          >
+        </div>
+        <h1
+          class="font-serif capitalize text-4xl sm:text-5xl mb-8 max-w-screen-sm text-balance sm:mb-20"
+        >
+          Venha experimentar a vida na floresta
+        </h1>
+        <div class="text-sm sm:flex justify-between items-end">
+          <p class="mb-4 sm:mb-0">
+            Melhores locais para visitar de
+            <a
+              class="underline decoration-2 underline-offset-4 hover:no-underline"
+              href="./"
+              >2049</a
+            >
+          </p>
+          <div>
+            <p class="uppercase mb-2">Recomendado por</p>
+            <p class="flex items-center gap-4">
+              <img
+                class="w-28"
+                src="src/img/parceiros/wildbeast.svg"
+                alt="wildbeast"
+              />
+              <span>|</span>
+              Revista Nacional
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section
+      id="acomodacoes"
+      class="container mb-12 sm:mb-16 pt-16 grid gap-8 lg:grid-cols-[2fr_3fr]"
+    >
+      <div
+        class="content-end bg-[url('src/img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom"
+      >
+        <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl">
+          Refúgio Natural
+        </h2>
+        <ul
+          class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl"
+        >
+          <li>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente
+            a natureza de perto
+          </li>
+          <li>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conecte-se
+            com a natureza
+          </li>
+          <li>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span
+            >Desconecte-se do digital
+          </li>
+          <li>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a
+            vida selvagem
+          </li>
+          <li>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a
+            sua cabine preferida
+          </li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+        <div class="col-span-full grid *:col-start-1 *:row-start-1">
+          <img
+            class="h-52 w-full object-cover rounded-xl"
+            src="src/img/casa1.jpg"
+            alt="Casa 1"
+          />
+          <span
+            class="self-start justify-self-end m-2 uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none"
+            >Ruby</span
+          >
+        </div>
+        <div class="grid *:col-start-1 *:row-start-1">
+          <img
+            class="size-full object-cover rounded-xl"
+            src="src/img/casa2.jpg"
+            alt="Casa 2"
+          />
+          <span
+            class="self-start justify-self-end m-2 uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none"
+            >Emerald</span
+          >
+        </div>
+        <div class="grid *:col-start-1 *:row-start-1">
+          <img
+            class="size-full object-cover rounded-xl"
+            src="src/img/casa3.jpg"
+            alt="Casa 2"
+          />
+          <span
+            class="self-start justify-self-end m-2 uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none"
+            >Saphire</span
+          >
+        </div>
+      </div>
+    </section>
+    <section id="eventos" class="mb-12 sm:mb-16 py-12 sm:py-16 bg-verde-900">
+      <div class="container">
+        <p
+          class="mb-4 text-center text-verde-200 uppercase tracking-widest text-sm"
+        >
+          Conecte-se com a natureza
+        </p>
+        <h2
+          class="mb-8 text-white text-4xl sm:text-6xl text-center max-w-screen-md mx-auto text-balance font-serif"
+        >
+          Cada Som, Cada Momento, Uma Nova Descoberta
+        </h2>
+        <div
+          class="overflow-x-auto pb-4 grid grid-cols-[repeat(3,minmax(300px,1fr))] gap-4 sm:gap-8 snap-x snap-mandatory"
+        >
+          <div
+            class="grid snap-center gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl"
+          >
+            <h3 class="text-verde-300 text-2xl font-serif">Lua Nova</h3>
+            <div class="text-white">
+              <p class="font-serif text-5xl">23</p>
+              <p class="text-xl">Março 2049</p>
+            </div>
+            <p class="text-gray-300 text-balance">
+              Melhor período para observação astronômica. O Céu estará claro e
+              as estrelas visíveis
+            </p>
+            <a
+              href="#contato"
+              class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 self-end justify-self-start"
+              >Reservar 23/03</a
+            >
+          </div>
+          <div
+            class="grid snap-center gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl"
+          >
+            <h3 class="text-verde-300 text-2xl font-serif">Aurora Boreal</h3>
+            <div class="text-white">
+              <p class="font-serif text-5xl">15</p>
+              <p class="text-xl">Abril 2049</p>
+            </div>
+            <p class="text-gray-300 text-balance">
+              Melhor período para observação astronômica. O Céu estará claro e
+              as estrelas visíveis
+            </p>
+            <a
+              href="#contato"
+              class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 self-end justify-self-start"
+              >Reservar 15/04</a
+            >
+          </div>
+          <div
+            class="grid snap-center gap-4 bg-verde-800 p-6 sm:p-8 rounded-xl"
+          >
+            <h3 class="text-verde-300 text-2xl font-serif">
+              Chuva de Meteoros
+            </h3>
+            <div class="text-white">
+              <p class="font-serif text-5xl">18</p>
+              <p class="text-xl">Agosto 2049</p>
+            </div>
+            <p class="text-gray-300 text-balance">
+              Melhor período para observação da chuva de meteoros. O Céu estará
+              iluminado pelas estrelas.
+            </p>
+            <a
+              href="#contato"
+              class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 self-end justify-self-start"
+              >Reservar 18/08</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
