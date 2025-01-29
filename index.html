@@ -12,9 +12,7 @@
   <body class="bg-verde-800 font-sans">
     <div class="container mt-4 flex justify-center md:justify-start">
       <div class="inline-flex items-center rounded-md bg-verde-900">
-        <span
-          class="size-2 bg-verde-300 block rounded-full relative -left-1"
-        ></span>
+        <span class="size-2 block neon relative -left-1"></span>
         <div class="flex text-verde-300 divide-x-2 divide-verde-800">
           <div class="px-4 py-2 capitalize" id="dia">Segunda</div>
           <div class="px-4 py-2" id="temperatura">25º</div>
@@ -83,7 +81,7 @@
       </nav>
       <button
         id="mobile-button"
-        class="bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 text-verde-900 py-2 px-4 gap-3 rounded-full flex items-center lg:hidden"
+        class="btn py-1 px-4 gap-3 rounded-full flex items-center lg:hidden"
       >
         Menu
         <span
@@ -119,11 +117,9 @@
           class="sm:bg-verde-950 bg-verde-950/60 mb-8 sm:inline-flex sm:items-center items-start sm:py-1 sm:pr-1 sm:rounded-full rounded-xl sm:pl-4 sm:gap-8 flex flex-col gap-2 p-4 sm:flex-row"
         >
           vagas para dezembro abertas
-          <a
-            class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400"
-            href=""
-            >Reserve Hoje</a
-          >
+          <a class="inline-flex btn items-center gap-2" href="#contato"
+            >Reserve Hoje <img src="src/img/seta.svg" alt="seta"
+          /></a>
         </div>
         <h1
           class="font-serif capitalize text-4xl sm:text-5xl mb-8 max-w-screen-sm text-balance sm:mb-20"
@@ -156,7 +152,7 @@
     </main>
     <section
       id="acomodacoes"
-      class="container mb-12 sm:mb-16 pt-16 grid gap-8 lg:grid-cols-[2fr_3fr]"
+      class="radial-gradient container mb-12 sm:mb-16 pt-16 grid gap-8 lg:grid-cols-[2fr_3fr]"
     >
       <div
         class="content-end bg-[url('src/img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom"
@@ -168,24 +164,24 @@
           class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl"
         >
           <li>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente
-            a natureza de perto
+            <span class="h-0.5 w-6 neon inline-block"></span>Experimente a
+            natureza de perto
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conecte-se
-            com a natureza
+            <span class="h-0.5 w-6 neon inline-block"></span>Conecte-se com a
+            natureza
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span
-            >Desconecte-se do digital
+            <span class="h-0.5 w-6 neon inline-block"></span>Desconecte-se do
+            digital
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a
-            vida selvagem
+            <span class="h-0.5 w-6 neon inline-block"></span>Observe a vida
+            selvagem
           </li>
           <li>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a
-            sua cabine preferida
+            <span class="h-0.5 w-6 neon inline-block"></span>Escolha a sua
+            cabine preferida
           </li>
         </ul>
       </div>
@@ -252,9 +248,7 @@
               Melhor período para observação astronômica. O Céu estará claro e
               as estrelas visíveis
             </p>
-            <a
-              href="#contato"
-              class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 self-end justify-self-start"
+            <a href="#contato" class="justify-self-start self-end btn"
               >Reservar 23/03</a
             >
           </div>
@@ -270,9 +264,7 @@
               Melhor período para observação astronômica. O Céu estará claro e
               as estrelas visíveis
             </p>
-            <a
-              href="#contato"
-              class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 self-end justify-self-start"
+            <a href="#contato" class="justify-self-start self-end btn"
               >Reservar 15/04</a
             >
           </div>
@@ -290,9 +282,7 @@
               Melhor período para observação da chuva de meteoros. O Céu estará
               iluminado pelas estrelas.
             </p>
-            <a
-              href="#contato"
-              class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full bg-gradient-to-b from-verde-200 via-verde-300 to-verde-400 self-end justify-self-start"
+            <a href="#contato" class="justify-self-start self-end btn"
               >Reservar 18/08</a
             >
           </div>
@@ -313,7 +303,7 @@
           Escolha sua próxima aventura
         </h2>
         <h3
-          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]"
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]"
         >
           Observação Noturna
         </h3>
@@ -321,7 +311,7 @@
           Explore a vida selvagem em seu habitat natural sob as estrelas
         </p>
         <h3
-          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]"
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]"
         >
           Vida Selvagem
         </h3>
@@ -329,7 +319,7 @@
           Observe a vida selvagem em seu habitat natural.
         </p>
         <h3
-          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]"
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]"
         >
           Canoagem
         </h3>
@@ -395,9 +385,7 @@
         <div
           class="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 transition-transform sm:hover:-translate-y-2"
         >
-          <div
-            class="bg-verde-400 size-10 flex items-center justify-center rounded-full"
-          >
+          <div class="neon size-10 flex items-center justify-center">
             <img src="src/img/manha.svg" alt="dawn" />
           </div>
           <h3 class="font-serif text-2xl text-white">Amanhecer</h3>
@@ -410,9 +398,7 @@
         <div
           class="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 sm:translate-y-12 transition-transform sm:hover:translate-y-10"
         >
-          <div
-            class="bg-verde-400 size-10 flex items-center justify-center rounded-full"
-          >
+          <div class="neon size-10 flex items-center justify-center">
             <img src="src/img/dia.svg" alt="dawn" />
           </div>
           <h3 class="font-serif text-2xl text-white">Meio-dia</h3>
@@ -425,9 +411,7 @@
         <div
           class="grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl flex-1 transition-transform sm:hover:-translate-y-2"
         >
-          <div
-            class="bg-verde-400 size-10 flex items-center justify-center rounded-full"
-          >
+          <div class="neon size-10 flex items-center justify-center">
             <img src="src/img/noite.svg" alt="dawn" />
           </div>
           <h3 class="font-serif text-2xl text-white">Anoitecer</h3>
@@ -450,19 +434,19 @@
         </p>
         <div class="grid gap-4">
           <div>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <span class="h-0.5 w-6 neon inline-block"></span>
             <h2 class="mb-2 text-2xl text-verde-300">Base</h2>
             <p class="text-gray-300">
               Rua da Mata, 123 - Floresta Nacional - RJ
             </p>
           </div>
           <div>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <span class="h-0.5 w-6 neon inline-block"></span>
             <h2 class="mb-2 text-2xl text-verde-300">Email</h2>
             <p class="text-gray-300">contato@forest.com</p>
           </div>
           <div>
-            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <span class="h-0.5 w-6 neon inline-block"></span>
             <h2 class="mb-2 text-2xl text-verde-300">Telefone</h2>
             <p class="text-gray-300">31 98888-7777</p>
           </div>
@@ -478,7 +462,7 @@
             id="nome"
             name="nome"
             type="text"
-            class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+            class="input"
             placeholder="Nome"
           />
         </div>
@@ -489,7 +473,7 @@
               id="email"
               name="email"
               type="email"
-              class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+              class="input"
               placeholder="Email"
             />
           </div>
@@ -499,7 +483,7 @@
               id="telefone"
               name="telefone"
               type="text"
-              class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+              class="input"
               placeholder="(31) 9 8888 7777"
             />
           </div>
@@ -511,7 +495,7 @@
             name="mensagem"
             type="text"
             rows="5"
-            class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 resize-none"
+            class="input resize-none"
             placeholder="Mensagem"
           ></textarea>
         </div>
